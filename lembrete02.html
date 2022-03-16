@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algumas coisas em CSS</title>
+    
+</head>
+<body>
+    <h2>Sites de paleta de cores</h2>
+    <ol>
+        <li>adobe colors</li>
+        <li>paletton.com</li>
+        <li>coolors</li>
+    </ol>
+    <p>O paleton é legal pois da para vc ver as cores aplicadas no site, exemplos de como ficaria.</p>
+    <h2>extensões do google</h2>
+
+    <li>colorzila</li>
+    <p>ativa o conta gota, entrar em qualquer site e clica na cor, depois copia no css.</p>
+    <li>FONTES NINJA - identifica as fontes,cores e tamanhos que estão sendo utilizadas em um site, depois de identificar, baixo pelo dafonte ou no google.</li>
+    <li>WEB DEVELOPER - liga e desliga html,css,java de um site.</li>
+    
+    
+    <h1>testando gradiente</h1>
+
+    <p>para mudar o fundo é tag background, para colocar em gradiente é background-image: linear-gradient, dentro do linear primeiro informo a direção e depois add as duas cores.</p>
+   
+    <h1>Fontes</h1>
+   
+    <h2>Tamanhos</h2>
+    <li>Medidas absolutas</li>
+    <p>cm, mm, in(polegada), px,pt(ponto),pc(paica)</p>
+    <li>Medidas relativas</li>
+    <p>em(medida relativa ao tamanho atual da fonte) ou relativa ao M maisculo dessa fonte.</p>
+    <p>Ex(medida relativa a altura x de uma fonte)</p>
+    <p>REM( igual ao em, só que relativo ao rute(rute é a configuração do body ou do *), a fonte que esta configurada no body)</p>
+    <p>VW view width largura da view port(tamanho da minha tela) ou seja isso é porcentagem da view porte.</p>
+    <p>VH largura da view port</p> 
+    <p>e posso trabalhar tbm com %</p>
+
+    <p><mark>as medicas mais indicadas para o font size é o px e o em</mark></p>
+
+    <p>O tamanho padrão de fonto do navegador é 16 px, ou sejá se eu colocar 1em não vai mudar nada, porque esta igual a fonte padão, agora quando coloco 2em, a fonte vai almentar pois agora o tamanho da fonte será 32, o dobro do tamanho dos 16px.</p>
+
+    <h2>fontes do google</h2>
+    <p>escolhe a fonte, clica em add, no menu da direita já vai aparecer, coloca importar para o css e cola lá.</p>
+    
+    <h2>Fontes externas</h2>
+    <p>quando for baixar a fonte observar se tem ministula e acentos. <br>
+    Entra no dafonte baixa, a pasta vem zipada, clica com o direito e coloca extrair tudo, entra na pasta e copia os arq para a pasta que esta usando, vai para o css e add @fonte-face, na url coloca o nome do arq,depois add format e informa o formato. <br>
+    Se a fonte vir com dois formatos é bom add os dois, caso algum navegador não reconheça alguns dos formatos, é só add outra url.
+
+    obs: para ver o formato da fonte, é so clicar c/ o direito, em propriedades. <br>
+
+    Não esquecer de colocar um nome na font-family, e depois colocar esse nome na tag que eu quero usar</p>
+
+    tipos de formato
+    <li>opentype para otf</li> 
+    <li>truetype para ttf</li>
+    <li>embedded para opentype</li>
+    <li>truetype para att(apple advanced typography)</li>
+    <li>svg</li>
+
+    <style>
+        @font-face {
+            font-family:"dafonte" ;
+          src: url("Dutalisa Joily") format("opentype")
+          url("Dutalisa Joily") format("truetype");
+       }
+
+       h6{
+        font-family: "dafonte" times, serif;
+        font-size: 2em;
+
+       }
+
+       div#bola{
+           height: 100px;
+           width: 100px;
+           background-color: red;
+           border-radius: 50%;
+       }
+
+    </style>
+    
+    <h6>testando a fonte baixada!</h6>
+    <p>não funcionou, não sei pq rs.</p>
+    <h2>Sites para identificar fontes</h2>
+    <li>WHAT FONT IS.COM - se eu tiver um print ou uma imagem posso colocar no site para ele identificar, ele vai pedir para vc arrumar o contraste da fonte, o bjetivo é deixar ela mais identificavel, para facilitar a busca.Se uma linha estiver grudando na outra, eu devo fazer uma linha entre todas as letras.</li>
+    <li>FONT SQUIRREL- funciona da mesma forma, mas o primeiro é mais eficiente</li> 
+    <h1>Sombras</h1>
+    <p>tag box shadow.1px 1px 1px black. se preocupar em sempre manter uma sombra discreta.</p>
+    <h1>Bordas</h1>
+    <p>border-radius 20px por exemplo. faz um arrendondamento.</p>
+    <div id="bola">aqui esta</div>
+    
+</body>
+</html>

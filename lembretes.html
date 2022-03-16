@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lembretes</title>
+</head>
+<body>
+    <h1>Tags Semânticas</h1> 
+
+    <h2>Negrito</h2>
+    <p>melhor tag para negrito é &lt;strong&gt;</p>
+    <h2>Italico</h2>
+    <p>
+        Para colocar italico ctrl + shift + p + whap with abbreviation, e coloca a tag que deseja <i>ex: i</i>
+        se eu apenas colocar i não fica semântico, será forma.
+    </p>
+    <h2>Texto Marcado</h2>
+    <p>posso criar também um texto marcado <mark>usando a tag MARK</mark></p>
+    <p>para textos pequenos <small>a tag é small</small></p>
+    <p>para marcar textos excluidos <del>a tag é del</del></p>
+    <h2>textos inseridos</h2>
+    <p>para subrinhar um texto usar a <ins>tag ins</ins>, existe a tag sup mas não é semântico(não tem sentido)</p>
+    <h2>Texto subescrito e sobre escrito</h2>
+    <p>envelopa o texto e usa a tag sup x<sup>20</sup>+3 <br>
+    e para inserir H<sub>2</sub>O, envelopa tbm mas coloca a tag sub</p>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <p>o comando <code>documente.getelementbyid('teste')</code> é escrito em javaScript, para ficar nesse formato é só envelopar ctrl+ shift + whap with abbreviation + code, ele cria uma fonte mono espaçada que é otima para ler codigos.</p>
+    
+    <p> Quando eu mostrar algo com indentação, uso a tag code e dentro dela envelopo com a pre</p>
+
+
+    <pre>
+        <code>
+    num = int(input("digite um número"))
+    if num % 2 == 0:
+        print(f"o número {num}é PAR)
+    else:
+        print(f"o número {num}é IMPAR")
+    print("Fim do programa")
+        </code>
+    </pre>
+    <p>se focar com muito espaço é só selecionar o codigo SEM AS TAGs e aperta shift+tab que ele joga e codigo para trás</p>
+    <h2>Citações</h2>
+    <p>como diria o pai de um amigo <q>o computador é um burro muito rápido</q>, se colocar só as "" o codigo não fica semantico.</p>
+    <h2>Citações completas</h2>
+    <p>para trechos de livros <br>
+        segundo autor bla bla bla em seu livro bla bla bla: 
+        <blockquote cite="https://www.amazon.com.br/Mito-do-Empreendedor-Michael-Gerber/dp/8576765594/ref=sr_1_2?adgrpid=130597636529&gclid=CjwKCAiApfeQBhAUEiwA7K_UH202XlO9sVH5DluhXOSrSixLiBqo9o-_FTq2NjAxPJQ58STfa2lulBoCZTMQAvD_BwE&hvadid=549093492921&hvdev=c&hvlocphy=9100191&hvnetw=g&hvqmt=e&hvrand=13407335101707494848&hvtargid=kwd-339173646177&hydadcr=5733_11235961&keywords=o+mito+do+empreendedor&qid=1646143365&sr=8-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum modi cumque sequi odit veritatis praesentium laboriosam molestias error ex incidunt accusamus animi qui optio iste, nam ipsa iure unde?</blockquote>
+
+        não esquecer de colocar dentro, a tag cite e colar a url. na pagina não vai aparecer a url, mas é SEO, caso alguem pesquise pelo livro aparece o meu site.
+    </p>
+    <h2>Abreviações</h2>
+    <p>Estamos estudando <abbr title="Hyper text markup language">HTML</abbr> e <abbr title="Cascading style sheets">CSS</abbr>. Estou adorando!</p>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1">
+        <li>acordar</li>
+        <li>encher o saco da nathalia</li>
+        <li>escovar os dentes</li>
+        <li>tomar café</li>
+        <li>passear com o dino</li>
+        <li>estudar</li>
+    </ol>
+
+    <p>se eu estiver fazendo uma lista e quiser que ela comece de um numero especifico, dentro da tag ol coloca start e o numero.</p>
+    <h2>listas não ordenadas</h2>
+    <ul>
+        <li>pão</li>
+        <li>manteiga</li>
+        <li>ovo</li>
+        <li>um tesla modelo cybertruck</li>
+    </ul>
+    <h2>listas de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>linguagem de marcação para a criação do design de um site.</dd>
+    </dl>
+    <h1>Usando links externos</h1>
+    <p>é só envelopar com a tag a e colocar o link dentro</p>
+    cliqui aqui para descobrir o <a href="https://www.youtube.com/" target="_blank" rel="external">site que mais uso</a>
+    <p>quando for colocar um link externo não esquecer de dentro da tag a colocar as tags target e rel, para abrir um uma nova aba</p>
+    <h2>Links internos</h2>
+    <p>essa é a pagina que eu fiz do mãe to com fome <a href="teste.html" rel="next">conheça</a></p>
+    <p>se eu apertar ctrl+espaço ele me mostra as paginas que estão dentro da pasta. <br>
+    Sempre que for fazer um link para a proxima pagina colocar a tag rel next e para voltar rel prev
+    </p>
+
+    <p>Quando for fazer links patrocinados <a href="https://www.microbiquinis.com.br/" target="_bannk" rel="nofollow">Micro Biquinis</a> <br>mas o nofllow é para empresas que eu não conheço a fundo, o navegador vai entender que eu não dou um aval para esse conteudo, mas o link vai funcionar normalmente</p>
+    <p>quando o site tiver varias paginas vou precisar um conhecimentos em linox. mas para voltar para a primeira pagina é só colocar ../ no a e colocar o link da primeira pag.</p>
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="The Self-Taught Programmer_ The Definitive Guide to Programming Professionally - PDF Room.pdf">Baixar o livro em pdf</a></li>
+        <li><a href="livrozip.zip" download="livro.zip" type="application/pdf">Baixa o livro compactado em zip</a></li>
+
+    </ul>
+    <p>o primeiro link não baixou, mas abriu, o segundo baixou normal. até no curso aconteceu isso, então sei lá.</p>
+    <h1>Imagens dinamica</h1>
+    <p>tente abrir essas imagens em varios dispositivos diferentes ou diminua o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/img lembrete/P.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/img lembrete/M.png" type="image/png">
+
+        <img src="imagens/img lembrete/G.png" alt="imagem flexivel">
+
+        <p> o ideal é fazer 3 tamanhos de cada imagem g,m,p para pessoas que abrem em celulares, tablets, PCs e tvs, então a tag picture vai identificar esse padrão e vai alterar de acordo com o tamanho da tela do usuario. <br>
+        A imagem maior é add primeiro na tag img e depois é usada uma outra tag source:media:type, troca o minimo por maximo e coloca o tamanho da imagem maior, o guanabara disse para colocar sempre 50 a mais por causa das barras do navegador. <br>
+            A imagem do exemplo são    P 300 X 300 DIMENSÃO M 700 E G 1000. <br>
+            Não sei pq mas o meu as imagens menores não abriram quando eu diminuia a janela do chrome.
+        </p>
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <audio preload="metadata" controls>
+        <source src="midia/notification.wav" type="audio/wav">
+    </audio>
+    <p>na tag preload o ideal é colocar a opção metadata pois ela só carrega o arquivo quando o usuario clicar, assim não pessa tanto no site, se colocar auto, assim que o usuario abrir o site ela vai carregar, independente se ele clicou ou não. <br>
+    Ela tbm serve para mostrar os detalhes do audio, tempo e demais informaçõ. <br>
+    A tag controls serve para mostrar a barra do play. obs: arquivos mp3 e ogg são os mais leves.</p>
+    <h1>Inserindo vídeos</h1>
+    <h2>no meu servidor</h2>
+    <video src="midia/videoteste.mp4" controls width="500" poster="imagens/hot150.png"></video>
+    <p>O ideal é add o video em formatos diferentes por causa dos diversos navegadores. <br>
+    para isso add a tag video e depois source:src.</p>
+
+    <pre>
+    video
+    source:src add 1 formato
+    source:src add 2 formato
+    source:src add 3 formato
+    add um paragrafo e coloca: seu navegador não tem compartibilidade com reprodução de vídeos.
+    video
+    </pre> 
+    <h2>Inserindo vídeos externos YT</h2>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>do yt é só colar o link aqui</p>
+
+    <h1>Modelos de caixa</h1>
+    <li>BOX LEVEL - sempre se inicia em uma linha nova.</li>
+    <li>INLINE LEVEL - vai pular para o lado vai desenhar o que vc colocou e continuar o texto na mesma linha.</li>
+    <ul>Tags Box LEVEL
+        <li>div</li>
+        <li>h1 ao h6</li>
+        <li>p</li>
+        <li>main</li>
+        <li>header</li>
+        <li>nav</li>
+        <li>article</li>
+        <li>aside</li>
+        <li>footer</li>
+        <li>form</li>
+        <li>video</li>
+    </ul>
+    <ul>Tags INLINE LEVEL
+        <li>span</li>
+        <li>a</li>
+        <li>code</li>
+        <li>small</li>
+        <li>strong</li>
+        <li>em</li>
+        <li>sup e sub</li>
+        <li>label</li>
+        <li>button</li>
+        <li>input</li>
+        <li>select</li> 
+
+    </ul>
+    
+
+
+
+
+
+
+
+</body>
+</html>

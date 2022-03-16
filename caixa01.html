@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+        h1{
+            border: 5px solid lightslategray;
+        }
+
+        body{
+            width: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(58, 58, 58);
+            margin: 0px;            
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px; /* coloquei margem zero,pq por padão ele da um pequeno espaço do começo da telo, com o zero ele fica rente*/
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(150, 116, 116);
+        }
+
+        nav{
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+        nav > a{
+            text-decoration: none;
+            color: red;
+            font-weight: bold; 
+            margin: 30px;           
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Exemplos de caixa box level</h1>
+    <p>parávrafos também são exemplos de box level, mas os <a href="#">links são exemplos de caixas inline level</a>. vamos ver como isso funciona.</p>
+
+    <p>Padding top,right,bottom e left, e se precisar arrumar é no sentido horario. ou só add a tag padding e vou colocando as numeraçõs, se o numero for igual nos 4 cantos é só colocar uma vez.</p>
+    <p>Border: width,style, color. posso colocar só a tag border e ir add ex: border 10px solid black.</p>
+    <h1>Gruping tags</h1>
+        <header>
+            <h1>meu site</h1>
+            <nav>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+            </nav>            
+        </header>
+        <main>
+            <section id="assuntos">
+
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Artigo sobre o lixo do brasil</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore fuga perspiciatis excepturi laborum laudantium earum obcaecati molestias atque beatae, non ratione delectus facere nisi vel quia illum, quam, deserunt dolorem?</p>
+                    <aside>
+                        <p>artigo escrito por Jose da Silva</p>
+                    </aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>desenvolvido no curso em video</p>
+        </footer>
+
+
+
+</body>
+</html>
