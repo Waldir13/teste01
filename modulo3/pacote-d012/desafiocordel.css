@@ -1,0 +1,118 @@
+@charset "utf - 8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+        
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;    
+}
+
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps; /* dar um destaque maior para as iniciais*/
+    font-family: 'Bungee', cursive, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vw ; /* além de marter centralizado vai almentando ou diminuindo com a largura da tela*/
+}
+header p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: white;
+    font-weight: normal;
+    padding-bottom: 50px; /* coloquei 50 px para cima no h1 e agora 50px no P para ficar cimetrico*/
+    
+}
+
+header a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+
+}
+
+header a:hover{
+    background-color: rgba(255, 255, 255, 0.474);
+    text-decoration: underline;
+}
+
+main{
+    font-family: 'Sriracha';
+    font-size: 3vw;
+    line-height: 2em;
+    font-weight: bold;
+
+      
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+.two{
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px black;
+}
+
+.two p{
+    background-color: rgba(0, 0, 0, 0.508);
+    display: inline-block; /* faz a caixa se adaptar ao tamanho do conteudo*/
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 0px black; /*1 px de deslocamento lateral e vertical, espalhamento de 0px*/
+}
+
+.four{
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px black;
+}
+
+.four p{
+    background-color: rgba(0, 0, 0, 0.508);
+    display: inline-block; /* faz a caixa se adaptar ao tamanho do conteudo*/
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 0px black; /*1 px de deslocamento lateral e vertical, espalhamento de 0px*/
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius:2px;
+    transition-duration: 0.5s;
+    
+}
+
+footer > a:hover{
+    background-color: rgba(255, 255, 255, 0.474);
+    text-decoration: underline;
+}
