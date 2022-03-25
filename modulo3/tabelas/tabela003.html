@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <p>anatomia para tabelas grandes <br>
+    table <br>
+    thead - tr,td,th<br>
+    tbody - tr,td,th<br>
+    tfoot - tr,td,th<br>
+ </p>
+
+ <table>
+     <caption> states with more inhabitants in USA</caption>
+     <thead>
+        <tr>
+            <th scope="col">State</th> <!--scope "col" serve para informar que esse titulo é dessa coluna, no caso esses estados pertencem a essa coluna. Se pertencesse a linha do lado, igual no "foot" que o total esta do lado, é so usar scope "row"-->
+            <th scope="col" style="width: 50px;">population</th> <!-- posso colocar o style para corrigir algo específico, a coluna população estava muito grande, agora com 50px esta ok-->
+        </tr>
+     </thead>
+
+     <tbody>
+        <tr>
+            <td>California</td>
+            <td class="num">39 538 223</td>
+        </tr>
+
+        <tr>
+            <td>Texas</td>
+            <td class="num">29 145 505</td>
+        </tr>
+
+        <tr>
+            <td>Flórida</td>
+            <td class="num">21 538 187</td>
+        </tr>
+     </tbody>
+
+     <tfoot>
+        <th scope="row">total inhabitants</th>
+        <td class="num"><strong>90.221.915</strong></td>
+     </tfoot>
+ </table>
+</body>
+</html>
